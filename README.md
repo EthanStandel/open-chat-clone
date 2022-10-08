@@ -1,6 +1,6 @@
-# fullstack-scaffold
+# open-chat-clone
 
-A generic scaffold for fullstack applications. You probably don't want this, You should probably use [`Create T3 App`](https://create.t3.gg/). But I want this so that's why it's here.
+This will be a chat application meant to clone and represent all major features of standard chat applications. It's also meant to be a mock-project for new developers.
 
 ## client
 
