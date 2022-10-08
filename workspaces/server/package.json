@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "nodemon ./src/entry.ts",
+    "start": "ts-node --transpile-only ./src/entry.ts"
+  },
+  "devDependencies": {
+    "json-schema-to-ts": "^2.5.5",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
+    "types-fastify-socket.io": "^0.0.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.1.0",
+    "@fastify/middie": "^8.0.0",
+    "dotenv": "^16.0.1",
+    "fastify": "^4.4.0",
+    "fastify-socket.io": "^4.0.0",
+    "socket.io": "^4.5.1"
+  }
+}

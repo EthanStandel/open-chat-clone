@@ -1,0 +1,37 @@
+{
+  "name": "fullstack-scaffold",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "prepare": "husky install",
+    "dev": "concurrently \"npm run dev --workspace=client\" \"npm run dev --workspace=server\""
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/format": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "concurrently": "^7.4.0",
+    "conventional-changelog-atom": "^2.0.8",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3"
+  },
+  "workspaces": [
+    "workspaces/client",
+    "workspaces/server"
+  ],
+  "lint-staged": {
+    "./**/*.{ts,tsx}": "npx eslint"
+  },
+  "engines": {
+    "node": "16.x.x",
+    "npm": "8.x.x"
+  },
+  "engineStrict": true
+}
